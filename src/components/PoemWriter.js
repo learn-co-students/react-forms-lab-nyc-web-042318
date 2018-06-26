@@ -17,7 +17,10 @@ class PoemWriter extends React.Component {
   }
 
   displayError = () => {
-    if (this.state.value.split('\n').length !== 3 || this.state.value === '' ) {
+    // if (this.state.value.split('\n')[1]) {
+    //   console.log(this.state.value.split('\n')[1].split(" ").length)
+    // }
+    if (this.state.value.split('\n').length !== 3 || this.state.value === '' || this.state.value.split('\n')[0].split(" ").filter((val) => val).length !== 5 || this.state.value.split('\n')[1].split(" ").filter((val) => val).length !== 3 || this.state.value.split('\n')[2].split(" ").filter((val) => val).length !== 5 ) {
       return (
         <div id="poem-validation-error" style={{ color: "red" }}>
           This poem is not written in the right structure!
