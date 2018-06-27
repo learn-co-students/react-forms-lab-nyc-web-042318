@@ -21,10 +21,14 @@ class LoginForm extends React.Component {
   sumbitForm = event =>{
 
     event.preventDefault();
+    // console.log(this.props)
     // debugger;
+    let input = {username:this.state.username, password:this.state.password};
 
     if(this.state.username == "" || this.state.password == "") return;
-    this.props.onSubmit();
+
+    this.props.onSubmit(input);
+
   }
 
   render() {
