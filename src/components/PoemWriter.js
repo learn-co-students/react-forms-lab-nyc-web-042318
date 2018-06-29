@@ -43,39 +43,6 @@ class PoemWriter extends React.Component {
 
 
 
-  // {
-  //   var wholeString = this.state.value;
-  //   var lines = wholeString.split("\n");
-  //
-  //
-  //   (lines.length !== 3 || lines[0].split(' ').length !== 5 || lines[1].split(' ').length !== 3 || lines[2].split(' ').length !== 5) ? this.setState ({
-  //     errorMessage: 'This poem is not written in the right structure!'
-  //   }) : this.setState ({
-  //     errorMessage: null
-  //   })
-  //
-  // }
-
-  // isCorrect = (poem) => {
-  // +    let newpoem = poem.split("\n").map(word => word.trim())
-  // +    if (
-  // +      newpoem[0].split(" ").length == 5 &&
-  // +      newpoem[1].split(" ").length == 3 &&
-  // +      newpoem[2].split(" ").length == 5
-  // +    ) {
-  // +      this.setState({
-  // +        correct: true
-  // +      })
-  // +    } else {
-  // +      this.setState({
-  // +        correct: false
-  // +      })
-  // +    }
-  // +  }
-
-
-
-
   render() {
 
     return (
